@@ -30,6 +30,10 @@ hermes plugins install gromilov/saitik-interface
 hermes plugins enable saitik-interface
 ```
 
+**Соседние файлы.** Экран (`screen`) опирается на скрипты механики — положи их в `~/.hermes/scripts/`
+агента (они же — источник правды для cron): `g.py` (экран) и `mcp_call.py` (токен и HTTP к Ткани).
+Без них `screen` честно скажет, чего не хватает; `node` самодостаточен (только `mcp_call.py`).
+
 ## Профиль агента (обязательно)
 
 Личные узлы — не в коде. После установки впиши в `~/.hermes/config.yaml`:
